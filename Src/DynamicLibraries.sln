@@ -1,13 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLibraries.Compilable", "DynamicLibraries.Compilable\DynamicLibraries.Compilable.csproj", "{51BCBAED-90D8-4BDD-A155-085C48C8485B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLibraries.Compilable.Tests", "DynamicLibraries.Compilable.Tests\DynamicLibraries.Compilable.Tests.csproj", "{8E17D87D-6D73-461A-B7DE-F40D96CB841D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicLibraries.Utility", "DynamicLibraries.Utility\DynamicLibraries.Utility.csproj", "{4E19E9C8-5029-4132-8294-CD3F48BC621D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verstech.DynamicLibraries.Core.Compilable", "Verstech.DynamicLibraries.Core.Compilable\Verstech.DynamicLibraries.Core.Compilable.csproj", "{15AAEC33-CEB1-4825-B133-36488F30333E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTreeTests", "ExpressionTreeTests\ExpressionTreeTests.csproj", "{6826A811-BF3B-4985-A17E-366615F1805E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verstech.DynamicLibraries.Core.Utility", "Verstech.DynamicLibraries.Core.Utility\Verstech.DynamicLibraries.Core.Utility.csproj", "{8C44F422-506B-46FF-8DDF-DF2FC47EA731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verstech.DynamicLibraries.Core.ExpressionToSyntax", "Verstech.DynamicLibraries.Core.ExpressionToSyntax\Verstech.DynamicLibraries.Core.ExpressionToSyntax.csproj", "{3844A873-6070-4F32-BC21-98F5BBE69753}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old", "Old", "{9FC78F73-7F30-480C-BC08-897313DC7E1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +37,32 @@ Global
 		{4E19E9C8-5029-4132-8294-CD3F48BC621D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E19E9C8-5029-4132-8294-CD3F48BC621D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E19E9C8-5029-4132-8294-CD3F48BC621D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15AAEC33-CEB1-4825-B133-36488F30333E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15AAEC33-CEB1-4825-B133-36488F30333E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15AAEC33-CEB1-4825-B133-36488F30333E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15AAEC33-CEB1-4825-B133-36488F30333E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6826A811-BF3B-4985-A17E-366615F1805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6826A811-BF3B-4985-A17E-366615F1805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6826A811-BF3B-4985-A17E-366615F1805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6826A811-BF3B-4985-A17E-366615F1805E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C44F422-506B-46FF-8DDF-DF2FC47EA731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C44F422-506B-46FF-8DDF-DF2FC47EA731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C44F422-506B-46FF-8DDF-DF2FC47EA731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C44F422-506B-46FF-8DDF-DF2FC47EA731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3844A873-6070-4F32-BC21-98F5BBE69753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3844A873-6070-4F32-BC21-98F5BBE69753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3844A873-6070-4F32-BC21-98F5BBE69753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3844A873-6070-4F32-BC21-98F5BBE69753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51BCBAED-90D8-4BDD-A155-085C48C8485B} = {9FC78F73-7F30-480C-BC08-897313DC7E1D}
+		{8E17D87D-6D73-461A-B7DE-F40D96CB841D} = {9FC78F73-7F30-480C-BC08-897313DC7E1D}
+		{4E19E9C8-5029-4132-8294-CD3F48BC621D} = {9FC78F73-7F30-480C-BC08-897313DC7E1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9DAB880-1246-4EE7-8B24-BB51B37232E2}
 	EndGlobalSection
 EndGlobal
